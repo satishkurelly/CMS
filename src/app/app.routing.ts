@@ -7,9 +7,10 @@
 
 import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
+import {ShowPageComponent} from "./show-page/show-page.component";
 
 const appRoutes: Routes = [
-  {path: '**', redirectTo: '/manage', pathMatch: 'full'},
+  {path:'publish', component: ShowPageComponent},
 ];
 
 export const AppRouting: ModuleWithProviders =
