@@ -3,21 +3,9 @@
   <div class="row">
     <div class="col-md-12">
 
-      <ba-card title="CRM related Form" baCardClass="with-scroll">
-        <h4 class="grid-h">Create</h4>
+      <ba-card title="Show" baCardClass="with-scroll">
         <div class="row show-grid">
-          <div class="col-6 col-md-4">
-            <div class="button-wrapper">
-              <button type="button" class="btn btn-primary btn-raised" (click)="addText()">Text Box</button>
-            </div>
-            <div class="button-wrapper">
-              <button type="button" class="btn btn-primary btn-raised" (click)="addRadio()">Radio Button</button>
-            </div>
-            <div class="button-wrapper">
-              <button type="button" class="btn btn-primary btn-raised" (click)="addCheckBox()">Check Button</button>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-8">
+          <div class="col-12 col-sm-12 col-md-12">
             <div title="Header">
               Header
               <div *ngFor="let comp of uiDivisionObject.HEADER.components ">
@@ -82,11 +70,6 @@
           </div>
         </div>
       </ba-card>
-      <ba-card title="Options" baCardClass="with-scroll">
-        <button class="btn btn-primary confirm-btn" (click)="save()">Save</button>
-        <button class="btn btn-primary confirm-btn" [routerLink]="['publish']">Publish</button>
-      </ba-card>
     </div>
   </div>
-
 </div>

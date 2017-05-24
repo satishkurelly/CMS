@@ -1,0 +1,35 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <h4 class="modal-title">{{modalHeader}}</h4>
+    <button class="close" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    {{modalContent}}
+    <div class="input-demo radio-demo row">
+      <div class="col-md-4">
+        <label class="radio-inline nowrap">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="HEADER" [(ngModel)]="divisionName">
+          <span>HEADER</span>
+        </label>
+      </div>
+      <div class="col-md-4">
+        <label class="radio-inline nowrap">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="BODY" [(ngModel)]="divisionName">
+          <span>BODY</span>
+        </label>
+      </div>
+      <div class="col-md-4">
+        <label class="radio-inline nowrap">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="FOOTER" [(ngModel)]="divisionName">
+          <span>FOOTER</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary confirm-btn" (click)="create()">Create</button>
+    <button class="btn btn-primary confirm-btn" (click)="closeModal()">Close</button>
+  </div>
+</div>
